@@ -1,0 +1,58 @@
+<!-- Aufgabe 1 -->
+<!-- Ändern Sie den Wert für <B> von 200 zu 500 ohne die anderen Werte zu ändern! -->
+
+<root>
+	<A>100</A>
+	<B>200</B>
+	<C>300</C>
+</root>
+
+<!-- Lösung -->
+
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- Aufgabe 2 -->
+<!-- Fügen Sie das Element A4 mit dem Wert 400 Unter dem Element A3 auf der gleichen Ebene wie A3 ein! -->
+
+<root>
+	<A>
+		<A1>100</A1>
+		<A2>200</A2>
+	</A>
+	<A>
+		<A3>300</A3>
+	</A>
+</root>
+
+<!-- Lösung -->
+
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- Aufgabe 3 -->
+<!-- Ändern Sie den Wert des Attributs “label” von hallo zu moin!  -->
+
+<root>
+	<A label="hallo">100</A>
+</root>
+
+<!-- Lösung -->
+
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!-- Aufgabe 4 -->
+<!-- Ändern Sie die Adresse des zweiten Links auf https://www.def.de und löschen Sie den dritten Link! -->
+
+<root>
+	<link id="1" href="https://www.his.de" />
+	<link id="2" href="https://www.abc.de" />
+	<link id="3" href="https://www.yyy.de" />
+</root>
+
+<!-- Lösung -->
+
