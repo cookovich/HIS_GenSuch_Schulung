@@ -3,3 +3,4 @@ irgendwelche notizen...
 konfigdateien zu suchen: im debug panel (lasst sich in einer local-cust auf Y setzen)
 oder in der url die flowID Datei suchen, in der steht auch die entsprechende config datei drin. 
 
+https://wiki.his.de/mediawiki/index.php/Konfiguration_der_Generische_Suche-HISinOne
