@@ -12,3 +12,16 @@ Mit diesen Einträgen kann man config-dateien "überschreiben", also aus suchePe
 - mischattribut definiert das Attribut, nach welchem die Elemente gesucht werden
 - loeschen und ueberschreiben definiert, was mit dem Element passieren soll
 
+Pfade:
+
+studentSearch.xml und die _local:
+/var/lib/tomcat9/webapps/qisserver/WEB-INF/conf/cs/sys/genericSearch/conf/cm/stu/enrollment$
+
+searchPath.xml
+/var/lib/tomcat9/webapps/qisserver/WEB-INF/conf/cs/sys/genericSearch/conf
+
+Spezialmodule.txt
+/var/lib/tomcat9/webapps/qisserver/WEB-INF/conf
+
+Flow-Dateien
+/var/lib/tomcat9/webapps/qisserver/WEB-INF/conf/cm/stu/enrollment
