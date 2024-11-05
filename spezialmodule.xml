@@ -9,6 +9,11 @@
 
 <!-- Lösung -->
 
+<root>
+	<B ueberschreiben="Y">500</B>
+</root>
+
+
 
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
@@ -27,6 +32,13 @@
 </root>
 
 <!-- Lösung -->
+<root>
+	<A/>
+	<A>
+		<A3/>
+		<A4>400</A3>
+	</A>
+</root>
 
 
 
@@ -40,7 +52,9 @@
 </root>
 
 <!-- Lösung -->
-
+<root>
+	<A label="moin">100</A>   <!--uberschreiben=Y hier nicht nötig, da dies nur für den Wert relevant ist, nicht für Attribute-->
+</root>
 
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
@@ -55,4 +69,8 @@
 </root>
 
 <!-- Lösung -->
+
+<root mischattribut="id">
+	<link id="2" href="https://www.def.de" />
+</root>
 
