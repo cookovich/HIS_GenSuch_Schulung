@@ -2,12 +2,14 @@
 <root mischattribut="name">
 	<entity name="Student">
 		<searchCriteria mischattribut="label">
+
 			<group label="de.his.javang.persoenlicheDatenSuchen" 
 			    mischattribut="label">
 				<criteria
 					label="Multisearch"
 					quickSearchCriterion="true"
 					multiSearchCriterion="true"
+					placeholder="Vorname, Nachname oder Matrikelnr."
 					multiSearchCriterionLabels="psv.Person.firstname|psv.Person.surname|psv.Student.registrationnumber">
 					Student.person.firstname,Student.person.surname,Student.registrationnumber
 				</criteria>
@@ -15,8 +17,11 @@
 				<criteria quickSearchCriterion="false" label="psv.Person.surname"/>
 				<criteria quickSearchCriterion="false" label="psv.Student.registrationnumber"/>
 				<criteria loeschen="y" label="cm.stu.search.officialStatisticsDataUpdatedAt"/>
+				<criteria label="Einschreibestatus">
+					Student.studystatus.uniquename
+				</criteria>
 			</group>
-		
+
 		</searchCriteria>
 	</entity>
 </root>
