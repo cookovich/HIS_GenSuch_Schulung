@@ -1,6 +1,14 @@
-irgendwelche notizen...
-
-konfigdateien zu suchen: im debug panel (lasst sich in einer local-cust auf Y setzen)
-oder in der url die flowID Datei suchen, in der steht auch die entsprechende config datei drin. 
-
+Allgemeine Infos:
 https://wiki.his.de/mediawiki/index.php/Konfiguration_der_Generische_Suche-HISinOne
+
+Config-Dateien
+Konfigurationsdateien Speicherpfad ermitteln: im debug panel (lasst sich in einer local-cust auf Y setzen)
+Oder in der url die flowID Datei suchen, in der steht auch die entsprechende config datei drin. 
+
+Spezialmodule unter : /var/lib/tomcat9/webapps/qisserver/WEB-INF/conf
+Mit diesen Einträgen kann man config-dateien "überschreiben", also aus suchePerson.xml  => suchePerson_local.xml  , wenn in Spezialmodule 'local' eingetragen ist. Bei uns vermutlich 'clone'?
+
+"Überschreiben" mit von der HIS definierten XML Attributen (mischattribut="label", loeschen="Y", ueberschreiben="Y").
+- mischattribut definiert das Attribut, nach welchem die Elemente gesucht werden
+- loeschen und ueberschreiben definiert, was mit dem Element passieren soll
+
