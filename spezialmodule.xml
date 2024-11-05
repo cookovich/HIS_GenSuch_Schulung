@@ -10,7 +10,7 @@
 <!-- Lösung -->
 
 <root>
-	<B ueberschreiben="Y">500</B>
+	<B ueberschreiben="y">500</B>
 </root>
 
 
@@ -72,5 +72,6 @@
 
 <root mischattribut="id">
 	<link id="2" href="https://www.def.de" />
+	<link id="3" loeschen="y"/>
 </root>
 
