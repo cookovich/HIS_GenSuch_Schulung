@@ -1,0 +1,54 @@
+<root  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="../../../searchConfig.xsd">
+
+	<entity name="Person">
+		<groupResult />
+		
+		<pageTitle>de.his.javang.suchen.personen.titel</pageTitle>
+		<tableTitle>de.his.javang.gefunden.personen</tableTitle>
+
+		<iconTitleColumns>
+			Person.firstname,
+			Person.surname
+		</iconTitleColumns>
+
+		<defaultSortCriteria>
+			Person.surname,
+			Person.firstname
+		</defaultSortCriteria>
+
+		<selectColumns>
+			<column label="psv.Person.surname">Person.surname</column>
+			<column label="psv.Person.firstname">Person.firstname</column>
+			<column label="Rolle">
+					[Role].defaulttext
+				</column>
+		</selectColumns>
+		
+		<hiddenSelectColumns>
+			<column name="defaulttext">CONCAT(Person.firstname, ' ', Person.surname)</column>
+		</hiddenSelectColumns>
+
+		<staticSearchCriteria>
+			<criteria value="=5" >
+				[Role].hiskeyId
+			</criteria>
+        </staticSearchCriteria>
+
+		<searchCriteria>
+			<group label="de.his.javang.suchen.personendaten">
+                <criteria label="psv.Person.surname" id="personSurname">
+                	Person.surname
+				</criteria>
+				<criteria label="psv.Person.firstname">
+					Person.firstname
+				</criteria>
+				<criteria label="Rolle">
+					[Role].defaulttext
+				</criteria>
+			</group>
+		</searchCriteria>
+	</entity>
+
+</root>
+
