@@ -1,0 +1,16 @@
+<root mischattribut="name">
+	<entity name="Student">
+		<searchCriteria mischattribut="label" > 
+			<group label="cm.stu.fee.FeeInvoiceInfo" mischattribut="label">
+				<!--Zahlung erwartet als Auswahlfeld-->
+				<criteria label="Fehlerkennzeichen"  selectFrom="allStudentErrorStatus" quickSearchCriterion="true">
+					Student.isCorrect.uniquename
+				</criteria>
+				<!--Zahlung erwartet als Checkbox-->
+				<criteria label="Zahlung erwartet" value="=20099" quickSearchCriterion="true">
+					Student.isCorrect.hiskeyId
+				</criteria>
+			</group>
+		</searchCriteria>
+	</entity>
+</root>
