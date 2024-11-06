@@ -25,3 +25,9 @@ Spezialmodule.txt
 
 Flow-Dateien
 /var/lib/tomcat9/webapps/qisserver/WEB-INF/conf/cm/stu/enrollment
+
+
+Zu den Screenshots "Suchen für gesamte Rolle anpassen":
+Das ist immer auf der Customizing/Develop instanz umsetzbar, da nur hier das Kästchen oben recht existiert.
+Wenn hier dann alles vorgenommen wurde, muss es aufs Produktivsystem übertragen werden.
+Das muss dann über "Komplette Konfiguration im- und exportieren" oder "Konfigurations-Packages_ins_Dateisystem_entladen" die physikalische Datei entladen werden, übers Git übertragen werden und dann manuell im produktiven "installiert" werden.
