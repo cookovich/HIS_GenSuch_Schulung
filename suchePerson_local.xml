@@ -1,0 +1,58 @@
+<root mischattribut="name">
+	<entity name="Person">
+		<searchCriteria mischattribut="label">
+			<group label="de.his.javang.suchen.personendaten" mischattribut="label">
+				<criteria label="psv.Person.firstname" quickSearchCriterion="true" />
+			</group>
+			<group label="Meine Gruppe" mischattribut="label">
+				<criteria label="Mein Nachname" quickSearchCriterion="true">
+					Person.surname
+				</criteria>
+				<criteria 
+					label="Blabla" 
+					inputType="DATE"
+					quickSearchCriterion="true">
+					[Student].enrollmentdate
+				</criteria>
+				<criteria 
+					label="Mehrfachsuche" 
+					multiSearchCriterion="true"
+					multiSearchCriterionLabels="psv.Person.firstname|psv.Person.surname"
+					placeholder="Vorname oder Nachname"
+					quickSearchCriterion="true">
+					Person.firstname,Person.surname
+				</criteria>
+				<criteria label="ist Student" value="=5" quickSearchCriterion="true">
+					[Role].hiskeyId
+				</criteria>
+				
+				<!--selectFrom="genericSearchController.getSelectFrom('1=Irgendwas|2=Was anderes')"-->
+				<criteria label="Einschreibestatus"
+					quickSearchCriterion="true"
+					selectFrom="allStudystatus"
+					multipleSelect="true"
+					defaultValue="5"
+					showNullItem="false"
+					required="true"
+					disabled="true">
+					[Student].studystatus.id
+				</criteria>
+				
+				<criteria label="Einschreibestatus neu">
+					DONT_SELECT:[Student].studystatus.defaulttext
+				</criteria>
+				
+				<criteria label="Studenten"
+					useSelectTypeahead="true"
+					searchEntity="Person"
+					searchConfigFile="meineSuche.xml"
+					quickSearchCriterion="true"
+					helptext="Hier gibt es Hilfe">
+				Person.id	
+				</criteria>
+				
+			</group>
+		</searchCriteria>
+	
+	</entity>
+</root>
