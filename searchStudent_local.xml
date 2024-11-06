@@ -25,3 +25,45 @@
 		</searchCriteria>
 	</entity>
 </root>
+
+
+
+
+
+<root mischattribut="name">
+	<entity name="Student">
+		
+		<searchCriteria mischattribut="label"> 
+			
+			<group label="de.his.javang.persoenlicheDatenSuchen" mischattribut="label" criteriaGroup="true">
+				
+				<!--2. Staatsbürgerschaft-->
+				<criteria label="psv.Personinfo.secondNationalityId"
+					multipleSelect="true"
+					selectFrom="stuSearchController.getAllByNameIncludeInvalid('CountryValue')"
+					context="studentReport">
+                	[CountryValue:secondNationalityIncludeInvalid].id                    
+                </criteria>
+				
+			</group>
+			<!--Beurlaubungsgründe-->
+			<group label="cm.stu.Student.search_term_status" mischattribut="label">
+				<criteria label="Beurlaubungs-/Rückmeldedatum" 
+					inputType="DATE" 
+					quickSearchCriterion="true">
+					[DegreeProgram].progress.reregistrationDate
+				</criteria>
+				<criteria label="Beurlaubungsgrund"
+            		selectFrom="allReasonOfLeaves"
+            		multipleSelect="true"
+            		quickSearchCriterion="true">
+					[DegreeProgram].progress.reasonOfLeave.id
+				</criteria>
+			</group>
+			
+			<!--Gruppe löschen-->
+			<group label="cm.exa.enrollment.enrollments" loeschen="y" />
+			
+		</searchCriteria>
+	</entity>
+</root>
